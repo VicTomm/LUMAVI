@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LUMAVI</title>
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/motion-ui.css">
+        <link rel="stylesheet" href="css/foundation-icons.css">
+        <link rel="stylesheet" href="css/app.css">
+
+    </head>
+    <body>
+        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+          <ul class="orbit-container">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+            <li class="is-active orbit-slide">
+              <img class="orbit-image" src="http://placehold.it/2000x1100" alt="Space">
+              <figcaption class="orbit-caption">LUMAVI1</figcaption>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="http://placehold.it/2000x1100" alt="Space">
+              <figcaption class="orbit-caption">LUMAVI2</figcaption>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="http://placehold.it/2000x1100" alt="Space">
+              <figcaption class="orbit-caption">LUMAVI3</figcaption>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="http://placehold.it/2000x1100" alt="Space">
+              <figcaption class="orbit-caption">LUMAVI4</figcaption>
+            </li>
+          </ul>
+        </div>
+        <section>
+          <div class="row text-center fullwidth" id="intro">
+              <div class="small-12 columns container">
+                <h2 class="section-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <hr>
+                <div class="medium-3 small-12 columns team-member-desc">
+                  <img src="css/icons/Ironman.png">
+                </div>
+                <div class="medium-3 small-12 columns team-member-desc">
+                  <img src="css/icons/wolverine.png"/>
+                </div>
+                <div class="medium-3 small-12 columns team-member-desc">
+                  <img src="css/icons/batman.png"/>
+                </div>
+                <div class="medium-3 small-12 columns team-member-desc">
+                  <img src="css/icons/spider-man.png"/>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section>
+          <div class="row fullwidth text-center" id="services">
+            <div class="medium-6 small-12 columns container" id="web-container">
+              <h2>Web</h2>
+            </div>
+            <div class="medium-6 small-12 columns container" id="videogame-container">
+              <h2>Videojuegos</h2>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row text-center" id="calculator">
+            <div class="medium-12 small-12 columns container" id="calculator-container">
+               <h2>Cotiza</h2> 
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="row">
+            <div class="small-12 medium-6 medium-push-6 columns">
+              <form class="footer-form">
+                <div class="row">
+                  <div class="medium-9 medium-push-3 columns">
+                    <label>
+                      <label for="name" class="contact">Contactanos</label>
+                      <input type="text" id="name" placeholder="Nombre" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="medium-9 medium-push-3 columns">
+                    <label>
+                      <input type="email" id="email" placeholder="Correo Electrónico" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="medium-9 medium-push-3 columns">
+                    <label>
+                      <textarea rows="5" id="message" placeholder="Mensáje"></textarea>
+                    </label>
+                  </div>
+                  <div class="row">
+                    <div class="medium-9 medium-push-3 columns">
+                      <button class="submit" type="submit" value="Submit">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="small-12 medium-6 medium-pull-6 columns"> 
+              <p class="footer-links">
+                <a href="#intro">Quienes Somos</a>
+                <a href="#services">Servicios</a>
+                <a href="#calculator">Cotiza</a>
+              </p>
+              <ul class="inline-list social">
+                <a href="#"><i class="fi-social-facebook"></i></a>
+                <a href="#"><i class="fi-social-twitter"></i></a>
+              </ul>
+              <p class="copywrite">LUMAVI © 2017</p>
+            </div>
+          </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>
