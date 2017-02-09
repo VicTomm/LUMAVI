@@ -16,8 +16,11 @@
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
             <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
             <li class="is-active orbit-slide">
-              <img class="orbit-image" src="http://placehold.it/2000x1100" alt="Space">
-              <figcaption class="orbit-caption">LUMAVI1</figcaption>
+              <img src="images/blue.png" class="img-responsive" id="blue"/>
+              <img src="images/red.png" class="img-responsive" id="red"/>
+              <img src="images/orange.png" class="img-responsive" id="orange"/>
+              <img src="images/points.png" class="img-responsive" id="points"/>
+              <img src="images/lumavi-text.png" class="img-responsive" id="lumavi-text"/>
             </li>
             <li class="orbit-slide">
               <img class="orbit-image" src="http://placehold.it/2000x1100" alt="Space">
@@ -100,6 +103,41 @@
           <div class="row fullwidth text-center" id="services">
             <div class="medium-6 small-12 columns container" id="web-container">
               <h2>Web</h2>
+              <div class="row fullwidth" id="web-anim">
+                  <div class="small-12 columns mockup">
+                    <div class="large-12 medium-12 small-12 columns">
+                      <div class="mockups">HEADER</div>
+                    </div>
+                    <div class="large-12 medium-12 small-12 columns">
+                      <div class="mockups">CAROUSEL</div>
+                    </div>
+                    <div class="large-3 medium-6 small-6 columns">
+                      <div class="mockups">MEMBER 1</div>
+                    </div>
+                    <div class="large-3 medium-6 small-6 columns">
+                      <div class="mockups">MEMBER 2</div>
+                    </div>
+                    <div class="large-3 medium-6 small-6 columns">
+                      <div class="mockups">MEMBER 3</div>
+                    </div>
+                    <div class="large-3 medium-6 small-6 columns">
+                      <div class="mockups">MEMBER 4</div>
+                    </div>
+                    <div class="large-6 medium-6 small-6 columns">
+                      <div class="mockups">SECTION 1</div>
+                    </div>
+                    <div class="large-6 medium-6 small-6 columns">
+                      <div class="mockups">SECTION 2</div>
+                    </div>
+                    <div class="large-12 medium-12 small-12 columns">
+                      <div class="mockups">QUOTATION</div>
+                    </div>
+                    <div class="large-12 medium-12 small-12 columns">
+                      <div class="mockups">FOOTER</div>
+                    </div>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="medium-6 small-12 columns container" id="videogame-container">
               <h2>Videojuegos</h2>
@@ -109,7 +147,7 @@
         <section>
           <div class="row text-center" id="calculator">
             <div class="medium-12 small-12 columns container" id="calculator-container">
-               <h2>Cotiza</h2> 
+               <h2>Cotiza</h2>
             </div>
           </div>
         </section>
@@ -147,7 +185,7 @@
                 </div>
               </form>
             </div>
-            <div class="small-12 medium-6 medium-pull-6 columns"> 
+            <div class="small-12 medium-6 medium-pull-6 columns">
               <p class="footer-links">
                 <a href="#intro">Quienes Somos</a>
                 <a href="#services">Servicios</a>
@@ -164,8 +202,9 @@
 
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/vendor/foundation.js"></script>
-        <script>
-            $(document).foundation();
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="js/vendor/animation.gsap.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
