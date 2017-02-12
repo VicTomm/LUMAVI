@@ -41,21 +41,15 @@ var scene = new ScrollMagic.Scene({
 .setTween(tween)
 .addTo(controller);
 
-$(function() {
-  
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    $removeClass = $("ul li a").removeClass('selected');
-    $(this).addClass('selected');
+function menu() {
+    var burger = document.querySelector('.hamburger');
+    var navList = document.querySelector('.nav-list');
     
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+    burger.addEventListener('click', function(e) {
+        e.preventDefault();
+        burger.classList.toggle('menu--active');
+        navList.classList.toggle('list__active');
+    });
+}
+
+menu();

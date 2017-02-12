@@ -1,60 +1,155 @@
-a:link,
-a:hover,
-a:visited,
-a:active {
-  color: #fff;
-  text-decoration: none;
+.hamburger:hover, li:hover {
+    background: #323232;
 }
 
-.card-holder {  
-  top: 30%;
-  position: fixed;
-  width: 0px;
-  overflow: visible;
-  z-index: 100;
+nav {
+    position: fixed;
+    width: 6.25em;
+    top: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    z-index: 100;
 }
 
-.card-wrapper {
-  display: inline-block;
-  float: right;
-  clear: both;
+nav a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.card {
-  position: relative;
-  left: 32px;
-  padding: 16px 32px 16px 64px;
-  margin: 8px;  
-  x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
-  background: #fff;
-  transition: all 0.3s ease-in-out 0.1s;
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
-.card:hover {
-  position: relative;
-  left: 100%;
-  margin-left: -32px;
-  box-shadow: 
-    0 -8px 8px -8px rgba(0, 0, 0, 0.5),
-    0 8px 8px -8px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
+.hamburger {
+    position: relative;
+    z-index: 2;
+    height: 7%; height: 7vh;
+    cursor: pointer;
+    background: #353535;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
-.card-content {
-  display: inline-block;
-  color: #fff;
-  font-family: 'Droid Sans', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  white-space: nowrap;
+.patty {
+    position: relative;
+    width: 2.5em;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.bg-01 { background: rebeccapurple; }
-.bg-02 { background: rgb(222, 161, 66); }
-.bg-03 { background: rgb(213, 69, 60); }
-.bg-04 { background: rgb(0, 177, 217); }
+.patty:before,
+.patty:after {
+    content: "";
+    position: absolute;
+    width: 2.5em;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+}
 
+.patty:before {
+    top: -10px;
+}
+
+.patty:after {
+    top: 10px;
+}
+
+.patty, .patty:after, .patty:before {
+    -webkit-transition: 400ms;
+    transition: 400ms
+}
+
+.hamburger.menu--active .patty {
+    background: transparent;
+}
+
+.hamburger.menu--active .patty:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0px;
+}
+
+.hamburger.menu--active .patty:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0px;
+}
+
+.nav-list {
+    background: #353535;
+    color: #fff;
+    height: 30%; height: 30vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-list.list__active {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+}
+
+.nav__item {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.nav__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.c_red { color: #f05252; }
+.c_blue { color: #52b4f0; }
+.c_yellow { color: #f4ee6a; }
+.c_green { color: #6af46c; }
+
+/*******/
 .team-member-desc img{
     border-radius: 50%;
     width: 150px;
