@@ -41,7 +41,7 @@ var scene = new ScrollMagic.Scene({
   .setTween(tween)
   .addTo(controller);
 
-function menu() {
+/*function menu() {
   var burger = document.querySelector('.hamburger');
   var navList = document.querySelector('.nav-list');
 
@@ -54,7 +54,7 @@ function menu() {
 
 menu();
 
-$(window).scroll(function () {
+/*$(window).scroll(function () {
   if ($(this).scrollTop() > 695) {
     $("#nav").fadeIn('slow');
     $("#lumavi-logo").fadeIn('slow');
@@ -62,4 +62,4 @@ $(window).scroll(function () {
     $("#nav").fadeOut('slow');
     $("#lumavi-logo").fadeOut('slow');
   }
-});
+});*/
